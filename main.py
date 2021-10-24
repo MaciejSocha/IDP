@@ -3,11 +3,16 @@ from Neuron import Neuron
 
 if __name__ == '__main__':
     neuron = Neuron(2)
-    list_input = [1, 2]
-    neuron.set_inputs(list_input)
+    train = [1, 2]
+    test = 3
+    Train.training_single_pattern(neuron, 500, 0.0001, train, test)
+    neuron.set_inputs([2, 3])
     print(neuron.process())
-    tr_set = [3, 8]
-    tr_set_out = 24
-    Train.training_single_pattern(neuron, 500, 0.001, tr_set, tr_set_out)
-    neuron.set_inputs([2, 6])
+
+    print('nulti')
+    neuron = Neuron(2)
+    train = [[1, 2], [2, 3], [3, 4]]
+    test = [3, 6, 7]
+    Train.training_multi_patterns(neuron, 500, 0.0001, train, test)
+    neuron.set_inputs([4, 5])
     print(neuron.process())
