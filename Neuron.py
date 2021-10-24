@@ -15,7 +15,7 @@ class Neuron:
             self.list_of_weights.append(random.random())
 
     def set_inputs(self, list_of_number):
-        if len(list_of_number) != self.number_of_inputs:
+        if len(list_of_number) != self.number_of_inputs & len(list_of_number) != len(self.list_of_inputs):
             raise Exception
 
         for i in range(len(list_of_number)):
@@ -23,7 +23,7 @@ class Neuron:
 
     def process(self):
         result = 0
-        for i in self.list_of_inputs:
+        for i in range(self.number_of_inputs):
             result += self.list_of_inputs[i] * self.list_of_weights[i]
         return result
 
