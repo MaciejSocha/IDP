@@ -164,7 +164,7 @@ As table \ref{tab:ex3} shown, our implementation of neuron works with different 
 
 \subsubsection{Description}
 
-We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[1, 2, 3, 4, 5], [10, 11, 12, 13, 14], [20, 21, 22, 23, 24]], [15, 60, 110]\}$
+We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[18, 16, 17, 19, 13], [21, 28, 23, 25, 24], [10, 20, 19, 28, 12]], [16.6, 24.2, 17.8]\}$
 
 \subsubsection{Results}
 
@@ -173,13 +173,13 @@ We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 i
 \begin{tabular}{|c|c|c|}
 \hline
 Input vector             & Calculated output  & Desired output \\ \hline
-{[}1, 2, 3, 4, 5{]}      & 15.521469358995688 & 15             \\ \hline
-{[}10, 11, 12, 13, 14{]} & 60.20899100373059  & 60             \\ \hline
-{[}20, 21, 22, 23, 24{]} & 109.86179283121383 & 110            \\ \hline
-{[}30, 31, 32, 33, 34{]} & 159.51459465869704 & 160            \\ \hline
-{[}40, 41, 42, 43, 44{]} & 209.16739648618028 & 210            \\ \hline
-{[}50, 51, 52, 53, 54{]} & 258.82019831366347 & 260            \\ \hline
-{[}60, 61, 62, 63, 64{]} & 308.47300014114677 & 310            \\ \hline
+{[}18, 16, 17, 19, 13{]} & 16.546514148348194 & 16.6           \\ \hline
+{[}21, 28, 23, 25, 24{]} & 24.210605977811213 & 24.2           \\ \hline
+{[}10, 20, 19, 28, 12{]} & 17.81649840767928  & 17.8           \\ \hline
+{[}31, 39, 33, 32, 38{]} & 34.31044976790747  & 34.6           \\ \hline
+{[}39, 15, 27, 15, 34{]} & 25.209572373860027 & 26             \\ \hline
+{[}45, 48, 43, 44, 41{]} & 43.9761854716063   & 44.2           \\ \hline
+{[}11, 50, 48, 35, 24{]} & 26.490185478860788 & 33.6           \\ \hline
 \end{tabular}
 \caption{3 training patterns}
 \end{table}
@@ -188,7 +188,7 @@ Input vector             & Calculated output  & Desired output \\ \hline
 
 \subsubsection{Description}
 
-We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[1, 2, 3, 4, 5], [10, 11, 12, 13, 14], [20, 21, 22, 23, 24], [30, 31, 32, 33, 34], [40, 41, 42, 43, 44]], \newline [15, 60, 110, 160, 210]\}$
+We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[18, 16, 17, 19, 13], [21, 28, 23, 25, 24], [10, 20, 19, 28, 12], [31, 39, 33, 32, 38], [39, 15, 27, 15, 34]], \newline [16.6, 24.2, 17.8, 34.6, 26]\}$
 
 \subsubsection{Results}
 
@@ -197,13 +197,13 @@ We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 i
 \begin{tabular}{|c|c|c|}
 \hline
 Input vector             & Calculated output  & Desired output \\ \hline
-{[}1, 2, 3, 4, 5{]}      & 14.842336229272117 & 15             \\ \hline
-{[}10, 11, 12, 13, 14{]} & 59.88041948415648  & 60             \\ \hline
-{[}20, 21, 22, 23, 24{]} & 109.92273421180576 & 110            \\ \hline
-{[}30, 31, 32, 33, 34{]} & 159.96504893945504 & 160            \\ \hline
-{[}40, 41, 42, 43, 44{]} & 210.00736366710433 & 210            \\ \hline
-{[}50, 51, 52, 53, 54{]} & 260.04967839475364 & 260            \\ \hline
-{[}60, 61, 62, 63, 64{]} & 310.09199312240287 & 310            \\ \hline
+{[}18, 16, 17, 19, 13{]} & 17.04363976937711  & 16.6           \\ \hline
+{[}21, 28, 23, 25, 24{]} & 24.308869335485923 & 24.2           \\ \hline
+{[}10, 20, 19, 28, 12{]} & 17.587225164066165 & 17.8           \\ \hline
+{[}31, 39, 33, 32, 38{]} & 34.67210754010774  & 34.6           \\ \hline
+{[}39, 15, 27, 15, 34{]} & 25.91407388836371  & 26             \\ \hline
+{[}45, 48, 43, 44, 41{]} & 45.32044001263306  & 44.2           \\ \hline
+{[}11, 50, 48, 35, 24{]} & 41.35612400604051  & 33.6           \\ \hline
 \end{tabular}
 \caption{5 training patterns}
 \end{table}
@@ -212,7 +212,7 @@ Input vector             & Calculated output  & Desired output \\ \hline
 
 \subsubsection{Description}
 
-We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[1, 2, 3, 4, 5], [10, 11, 12, 13, 14], [20, 21, 22, 23, 24], [30, 31, 32, 33, 34], [40, 41, 42, 43, 44], \newline [50, 51, 52, 53, 54], [60, 61, 62, 63, 64]], [15, 60, 110, 160, 210, 260, 310]\}$
+We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 inputs. In this example we use a training set with three patterns $ \Omega = \{[[18, 16, 17, 19, 13], [21, 28, 23, 25, 24], [10, 20, 19, 28, 12], [31, 39, 33, 32, 38], [39, 15, 27, 15, 34], \newline [45, 48, 43, 44, 41], [11, 50, 48, 35, 24]], [16.6, 24.2, 17.8, 34.6, 26, 44.2, 33.6]\}$
 
 \subsubsection{Results}
 
@@ -221,13 +221,13 @@ We set a number of epochs to 500 and training step to 0.0001. The neuron has 5 i
 \begin{tabular}{|c|c|c|}
 \hline
 Input vector             & Calculated output  & Desired output \\ \hline
-{[}1, 2, 3, 4, 5{]}      & 15.234540131857925 & 15             \\ \hline
-{[}10, 11, 12, 13, 14{]} & 60.201467346657466 & 60             \\ \hline
-{[}20, 21, 22, 23, 24{]} & 110.16471980754585 & 110            \\ \hline
-{[}30, 31, 32, 33, 34{]} & 160.12797226843423 & 160            \\ \hline
-{[}40, 41, 42, 43, 44{]} & 210.09122472932262 & 210            \\ \hline
-{[}50, 51, 52, 53, 54{]} & 260.05447719021095 & 260            \\ \hline
-{[}60, 61, 62, 63, 64{]} & 310.01772965109933 & 310            \\ \hline
+{[}18, 16, 17, 19, 13{]} & 16.5911648193495   & 16.6           \\ \hline
+{[}21, 28, 23, 25, 24{]} & 24.175929550231153 & 24.2           \\ \hline
+{[}10, 20, 19, 28, 12{]} & 17.722949498661375 & 17.8           \\ \hline
+{[}31, 39, 33, 32, 38{]} & 34.55228799663332  & 34.6           \\ \hline
+{[}39, 15, 27, 15, 34{]} & 25.927789977519232 & 26             \\ \hline
+{[}45, 48, 43, 44, 41{]} & 44.20265384994138  & 44.2           \\ \hline
+{[}11, 50, 48, 35, 24{]} & 33.59956763752777  & 33.6           \\ \hline
 \end{tabular}
 \caption{7 training patterns}
 \end{table}
@@ -237,7 +237,7 @@ Input vector             & Calculated output  & Desired output \\ \hline
 \begin{itemize}
 	\item Higher number of epochs has positive impact on results
 	\item Lower training step help to give a more accurate results
-	\item More training patterns give us a better results, but it would be greate to check it for more different patterns
+	\item More training patterns give us a better results. Results for testing patterns which was not used to lear, are much worse.
 \end{itemize}
 
 \bibliographystyle{plain}
