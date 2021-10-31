@@ -1,5 +1,5 @@
 import Train
-from Neuron import Neuron
+from task1.Neuron import Neuron
 
 if __name__ == '__main__':
     # neuron = Neuron(5)
