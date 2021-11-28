@@ -1,6 +1,5 @@
-from task2 import Function
-
+from task2.Network import Network
 
 if __name__ == '__main__':
-    print('test')
-    print(Function.sigmoid(5))
+    net = Network(4, 2, 4, True)
+    print(net.process([1, 2, 3, 4]))
