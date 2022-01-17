@@ -15,10 +15,10 @@ class Perceptron:
 
         if not is_input:
             for i in range(number_of_inputs):
-                self.list_of_weights.append(random.random())
+                self.list_of_weights.append(random.uniform(-0.5, 0.5))
                 self.list_of_inputs.append(0)
             if bias:
-                self.bias_weight = random.random()
+                self.bias_weight = random.uniform(-0.5, 0.5)
         else:
             for i in range(number_of_inputs):
                 self.list_of_weights.append(1)
@@ -37,15 +37,26 @@ class Perceptron:
         result = 0
         if self.activation_function == 'sigmoid':
             for i in range(self.number_of_inputs):
-                result += Function.sigmoid(self.list_of_inputs[i] * self.list_of_weights[i])
+                result += self.list_of_inputs[i] * self.list_of_weights[i]
+            if self.bias:
+                result += self.bias_weight
+            result2 = Function.sigmoid(result)
         else:
             if self.activation_function == 'linear':
                 for i in range(self.number_of_inputs):
-                    result += Function.linear(self.list_of_inputs[i] * self.list_of_weights[i])
+                    result += self.list_of_inputs[i] * self.list_of_weights[i]
+                if self.bias:
+                    result += self.bias_weight
+                result2 = Function.linear(result)
             else:
                 raise Exception
 
+        return result2
+
+    def calc(self):
+        result = 0.0
+        for i in range(self.number_of_inputs):
+            result += self.list_of_inputs[i] * self.list_of_weights[i]
         if self.bias:
             result += 1 * self.bias_weight
-
         return result
